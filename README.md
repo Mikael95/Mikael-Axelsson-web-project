@@ -1,2 +1,2 @@
-# Mikael-Axelsson-web-project
+# Mikael-Axelsson-webproject
 Projektarbete webbutveckling frontend.
