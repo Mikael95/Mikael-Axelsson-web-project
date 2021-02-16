@@ -32,7 +32,7 @@ p{
     color: rgb(0, 0, 0);
 }
 .container{
-    max-width: 1800px;
+    max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -79,11 +79,35 @@ p{
     background-size: cover;
     position:static;
 }
+.header-profile{
+    background-image:url(images/profile.jpg);
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:static;
+ 
+}
 .header .row{
     margin-top: 70px;
 }
 .categorys{
     margin: 70px 0;
+}
+.column-3 h3{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+    color: #555;
+    visibility: hidden;
+    opacity: 0;
+    transition: visability 0s, opacity 0.5s linear;
+}
+
+.column-3:hover h3{
+    visibility: visible;
+    opacity: 1;
 }
 .column-3{
     flex-basis: 30%;
@@ -92,6 +116,7 @@ p{
 }
 .column-3 img{
     width: 100%;
+    
 }
 .small-container{
     max-width: 1080px;
@@ -146,7 +171,7 @@ h4{
     width: 100%;
 }
 .column-2 .exclusive-img{
-    padding:  50px;
+    padding: 50px;
 }
 small{
     color:  #555;

@@ -1,3 +1,8 @@
+2021-02-16 kl.22:55
+
+har fortsatt med designen för startsidan och även börjat lite med profilsidan. har dock inte hunnit med så mycket idag. 
+imorgon är planen att designen blir mer  eller mindre färdig och jag börjar kolla på inloggningen.
+
 2021-02-15 kl.22:27
 
 har börjat skapa en layout för startsidan helt i ren HTML/CSS utan extensions.
