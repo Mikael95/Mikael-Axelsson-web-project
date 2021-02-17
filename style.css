@@ -1,5 +1,5 @@
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: boarding-box;
 }
@@ -82,7 +82,7 @@ p{
 .header-profile{
     background-image:url(images/profile.jpg);
     background-color: #cccccc;
-    height: 600px;
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,8 +170,9 @@ h4{
     background: radial-gradient(rgb(255, 255, 255),#0f5218);
     width: 100%;
 }
-.column-2 .exclusive-img{
+.column-2 img{
     padding: 50px;
+    width: 200px;
 }
 small{
     color:  #555;
@@ -183,8 +184,9 @@ small{
 }
 .reviews .column-3{
     text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 20pxx 0pxx rgba(0,0,0,0.1);
+    min-width: 200px;
+    padding: 40px 15px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: transform 0.5s;
 }
@@ -196,10 +198,7 @@ small{
 .reviews .column-3:hover{
     transform: translateY(-10px);
 }
-.fa.fa-quote-left{
-    font-size: 34px;
-    color: #ff523b;
-}
+
 .column-3 p{
     font-size: 12px;
     margin: 12px 0;
