@@ -1,3 +1,7 @@
+2021-02-17 kl.22:47
+
+har idag fortsatt med design men jar lite problem med att på allt på den plats jag vill. har även börjat prova javascript för att gör en loop med bilder.
+
 2021-02-16 kl.22:55
 
 har fortsatt med designen för startsidan och även börjat lite med profilsidan. har dock inte hunnit med så mycket idag. 
