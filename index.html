@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="rotator">
             <div class="topbar">
                 <div class="logotype">
                     <img  src="images/logo.png" width="150px" height="auto">
@@ -32,18 +32,9 @@
     <div class="categorys">
         <div class="small-container">
             <div class="row">
-                <div class="column-3">
-                   <img src="images/category-gear.jpg">
-                   <h3>Gear</h3>            
-                </div>
-                <div class="column-3">
-                    <img src="images/category-clothes.jpg">
-                    <h3>Clothes</h3>
-                </div>
-                <div class="column-3">
-                    <img src="images/category-food.JPG">
-                    <h3>Food</h3>
-                </div>
+                <div class="column-3" id="category-1"></div>  
+                <div class="column-3" id="category-2"></div>                                
+                <div class="column-3" id="category-3"></div>                 
             </div>
         </div>
     </div>
@@ -341,5 +332,11 @@
         <p class="copyright">Copyright 2020 - ExploreNative</p>
     </div>
 </div>
+
+<!----------------------- script ------------------------------>
+
+<script src="createCategory.js"></script>
+<script src="script.js"></script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
 </body>
 </html>

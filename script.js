@@ -1,13 +1,17 @@
-var images = ["1","2", "3"];
-var imageArray = document.getElementById(arrayImages);
-
-function createImage()  {   
-
-    for(var i = 0;  i < images.length; i++){
-        var imgs = document.createElement('img');
-        imgs.src = images[i];
-        imageArray.appendChild(img);
-    }
-    
-}
-setInterval(createImage, 20);
+function firstPicture() {
+    document.getElementById("rotator").style.backgroundImage = "url('images/background.jpg')";
+  
+    setTimeout(function() {
+      secondPicture();
+    }, 10000);
+  }
+  
+  function secondPicture() {
+    document.getElementById("rotator").style.backgroundImage = "url('images/profile.jpg')";
+  
+    setTimeout(function() {
+      firstPicture();
+    }, 10000);
+  }
+  
+  firstPicture();

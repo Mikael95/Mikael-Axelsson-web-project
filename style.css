@@ -71,7 +71,6 @@ p{
     background: #563434;
 }
 .header{
-    background-image:url(images/background.jpg);
     background-color: #cccccc;
     height: 600px;
     background-position: center;
@@ -268,6 +267,7 @@ ul{
 }
 .app-logo img{
     width: 140px;
+    height: 45px;
 }
 footer hr{
     border: none;
