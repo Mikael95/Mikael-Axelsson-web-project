@@ -160,6 +160,7 @@ h4{
 }
 .rating .fa{
     color: #ff523b;
+    margin-right: 5px;
 }
 .column-4:hover{
     transform: translateY(-5px);
