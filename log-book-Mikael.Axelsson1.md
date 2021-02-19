@@ -1,3 +1,9 @@
+2021-02-19 kl.22:37
+
+idag har jag skrivit några javascript filer som förkortar ner och tar bort upprepning i min HTML.
+har också börjat får till en inloggning, verkar fungera förutom att det redirectas fel än så länge.
+imorgon fortätter jag med login och eventuellt börjar inplementera något API.
+
 2021-02-18 kl.23:51
 
 har idag bara hunnit med att skriva en del javascript för att korta ner HTML koden.
