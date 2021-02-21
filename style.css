@@ -279,3 +279,8 @@ footer hr{
 .copyright{
     text-align: center;
 }
+
+#messagebox{
+    background: #555;
+    align-items: center;
+}
