@@ -1,3 +1,8 @@
+2021-02-19 kl.11:07
+
+hade lite dålig rapportering igår. men jag har nu fått inloggning med okta att fungera och håller nu på med att inplementera ett API som ska ge en väderrapport på den plats man befinner sig på.
+ska också försöka få detta APIet att bara vara tillgängligt i inloggat läge.
+
 2021-02-19 kl.22:37
 
 idag har jag skrivit några javascript filer som förkortar ner och tar bort upprepning i min HTML.

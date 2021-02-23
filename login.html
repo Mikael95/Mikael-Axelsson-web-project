@@ -8,14 +8,20 @@
     <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/js/okta-sign-in.min.js" type="text/javascript"></script>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-theme.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="login.css">
   
 </head>
 <body>
   <div class="container">
     <h1 class="text-center">Login</h1>
-    <div id="messageBox" class="jubotron">
-      Ure not logged in!
-    </div>   
+    <div id="messageBox" class="jumbotron">
+      <h2>Ure not logged in!</h2>
+      <div class="input">
+        <input type="text" class="inputValue">
+        <input type="submit" value="submit" onclick="GetData()">
+        <a class="button">Logout</a>
+      </div>
+    </div>
   </div>
   <div id="okta-login-container"></div>
 
@@ -66,5 +72,6 @@
       });
     }
   </script>
+  <script src="Api.js"></script>
 </body>
 </html>
