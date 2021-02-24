@@ -12,15 +12,50 @@
   
 </head>
 <body>
-  <div class="container">
-    <h1 class="text-center">Login</h1>
-    <div id="messageBox" class="jumbotron">
-      <h2>Ure not logged in!</h2>
-      <div class="input">
-        <input type="text" class="inputValue">
-        <input type="submit" value="submit" onclick="GetData()">
-        <a class="button">Logout</a>
-      </div>
+  <div class="header">
+      <div class="topbar">
+        <div class="logotype">
+            <img  src="images/logo.png" width="150px" height="auto">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:8080/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:8080/profile.html">Developer</a></li>
+                <li><a href="http://127.0.0.1:8080/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+      <div class="row">
+        <div class="column-1" id="api1">
+          <h1 style="text-decoration: underline;">Weather</h1>
+            <h2 id="city"></h2>         
+              <h2 style="text-decoration: underline;">Temperature: </h2>
+              <h2 id="tempActual"></h2>
+              <h2 style="text-decoration: underline;">Weather:</h2>
+              <h2 id="weather"></h2>
+              <h2 id="weather-description"></h2>
+              <h2 style="text-decoration: underline;">Wind:</h2>       
+              <h2 id="wind-deg"></h2>        
+              <h2 id="wind-gust"></h2>     
+              <h2 id="wind-speed"></h2>          
+        </div>
+        <div class="column-1">
+          <h1 class="text-center" style="text-decoration: underline;">Login</h1>
+            <div id="messageBox">
+              <h2>Ure not logged in!</h2>
+            </div>
+        </div>
+        <div class="column-1" id="api2">
+            <h1 style="text-decoration: underline;">Position</h1>
+            <h2 id="country_code"></h2>
+            <h2 id="country_name"></h2>
+            <h2 id="city"></h2>
+            <h2 id="postal"></h2>
+            <h2 id="latitude"></h2>
+            <h2 id="longitude"></h2>
+            <h2 id="IP"></h2>
+            <h2 id="state"></h2>
+        </div>
     </div>
   </div>
   <div id="okta-login-container"></div>
@@ -44,12 +79,15 @@
         function success(res) {
           var accessToken = res[0];
           var idToken = res[1];
-  
+          
           oktaSignIn.tokenManager.add('accessToken', accessToken);
           oktaSignIn.tokenManager.add('idToken', idToken);
-  
+          
+          
           window.location.hash='';
           document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
+          getPosition();
+          getWeather();
         },
         function error(err) {
           console.error(err);
@@ -60,6 +98,8 @@
         // If we get here, the user is already signed in.
         if (res.status === 'ACTIVE') {
           document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You are *still* logged in! :)";
+          getPosition();
+          getWeather();
           return;
         }
         oktaSignIn.renderEl(
