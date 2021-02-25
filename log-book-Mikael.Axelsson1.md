@@ -1,3 +1,8 @@
+2021-02-25 kl.23:55
+
+kom på altför sent att anpassa för mobilskärm... har fått det att fungera men inte snyggt för mindre skärm.
+kommer försöka lite mer med detta imorgon.
+
 2021-02-24 kl.23:52
 
 har nu fått ett fungerande  login med okta som i sin tur anropar två olika api:er (väder/position) vid inloggning.

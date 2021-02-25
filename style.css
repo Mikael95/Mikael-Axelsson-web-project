@@ -1,14 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: boarding-box;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Big Shoulders Inline Display', cursive;
 }
+
+
+
+/*-------------------------- header ------------------------------*/
+
 .topbar{
     display: flex;
-    align-items: center;
+    align-items:center;
     padding: 20px;
 }
 nav{
@@ -25,14 +30,17 @@ nav ul li{
 }
 a{
     text-decoration: none;
-    font-size: 20px;
     color: rgb(0, 0, 0);
 }
 p{
     color: rgb(0, 0, 0);
 }
 .container{
-    max-width: 1080px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    max-width: 1300px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -49,14 +57,14 @@ p{
 }
 
 .welcome-text h1{
-    font-size: 50px;
+    font-size: 130%;
     line-height: 80px;
-    margin: 40px 0;
+   
 }
 .welcome-text p{
-    font-size: 20px;
+    font-size: 100%;
     font-weight: 200;
-    margin: 40px 0;
+    
 }
 .button{
     display: inline-block;
@@ -70,14 +78,7 @@ p{
 .button:hover{
     background: #563434;
 }
-.header{
-    background-color: #cccccc;
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:static;
-}
+
 .header-profile{
     background-image:url(images/profile.jpg);
     background-color: #cccccc;
@@ -88,12 +89,16 @@ p{
     position:static;
  
 }
-.header .row{
-    margin-top: 70px;
-}
+
 .categorys{
+    display:table;
     margin: 70px 0;
 }
+
+/*------------------------ categorys ----------------------------*/
+
+
+
 .column-3 h3{
     position: relative;
     text-align: center;
@@ -118,7 +123,7 @@ p{
     
 }
 .small-container{
-    max-width: 1080px;
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px; 
