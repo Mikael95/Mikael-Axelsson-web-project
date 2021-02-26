@@ -62,9 +62,9 @@ function getPosition(){
 		document.getElementById("country_name").textContent = data["country_name"];
 		document.getElementById("city").textContent = data["city"];
 		document.getElementById("postal").textContent = data["postal"];
-		document.getElementById("latitude").textContent = data["latitude"];
-		document.getElementById("longitude").textContent = data["longitude"];
-		document.getElementById("IP").textContent = data["IP"];
+		document.getElementById("latitude").textContent = "latitude: "+data["latitude"];
+		document.getElementById("longitude").textContent = "longitude: "+data["longitude"];
+		document.getElementById("IP").textContent = "IP: "+data["IP"];
 		document.getElementById("state").textContent = data["state"];
 		document.getElementById("api2").style.visibility = "visible";
 		
